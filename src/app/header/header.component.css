@@ -1,18 +1,3 @@
-#myCarousel, #slides, #first, #second, #third{
-    width:100vw;
-    height:100vh;   
-}
-
-
-header {
-    background: #5b7173;
-    position: fixed;
-    opacity: 0.8;
-    margin-top: 0;
-    z-index: 100;
-    width: 100%;
-    border-bottom: 2px solid white;
-}
 
 .logo {
     float: left;
@@ -28,7 +13,7 @@ nav ul {
     list-style: none;
 }
 
-nav li {
+.navli {
     display: inline-block;
     margin-left: 70px;
     padding-top: 15px;

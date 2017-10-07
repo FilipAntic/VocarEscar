@@ -12,7 +12,6 @@ import { SelectItem } from 'primeng/primeng';
 export class AppComponent {
 
   @Language() lang: string;
-  currentSlide: number = 0;
   languages: SelectItem[];
   selectedLanguage: any;
   constructor(public locale: LocaleService, private translation: TranslationService) { }
@@ -32,7 +31,6 @@ export class AppComponent {
     } else if (this.lang === 'fr') {
       // this.selectedLanguage = 3;
     }
-    console.log(item);
   }
 
   onChange() {
@@ -48,25 +46,5 @@ export class AppComponent {
     this.locale.setDefaultLocale(language, country);
     this.locale.setCurrentCurrency(currency);
     location.reload();
-  }
-  selectLanguage(language: string): void {
-    this.locale.setCurrentLanguage(language);
-  }
-
-
-  onNext(): void {
-    if (this.currentSlide === 2) {
-      this.currentSlide = 0;
-      return;
-    }
-    this.currentSlide++;
-  }
-
-  onPrev(): void {
-    if (this.currentSlide === 0) {
-      this.currentSlide = 2;
-      return;
-    }
-    this.currentSlide--;
   }
 }

@@ -3,11 +3,11 @@
 
     <nav>
       <ul>
-        <li><a href="#">{{ 'menu.menuHome' | translate:lang }}</a></li>
-        <li><a href="#">{{ 'menu.menuAboutUs' | translate:lang }}</a></li>
-        <li><a href="#">{{ 'menu.menuProducts' | translate:lang }}</a></li>
-        <li><a href="#">{{ 'menu.menuProduction' | translate:lang }}</a></li>
-        <li><a href="#">{{ 'menu.menuContact' | translate:lang }}</a></li>
+        <li class="navli"><a href="#">{{ 'menu.menuHome' | translate:lang }}</a></li>
+        <li class="navli"><a href="#">{{ 'menu.menuAboutUs' | translate:lang }}</a></li>
+        <li class="navli"><a href="#">{{ 'menu.menuProducts' | translate:lang }}</a></li>
+        <li class="navli"><a href="#">{{ 'menu.menuProduction' | translate:lang }}</a></li>
+        <li class="navli"><a href="#">{{ 'menu.menuContact' | translate:lang }}</a></li>
         <!-- <li>
           <p-dropdown class="hidden-xs" [filter]="true" [options]="languages" [(ngModel)]="selectedLanguage" (onChange)="onChange()">
             <ng-template let-language pTemplate="item">
@@ -19,8 +19,8 @@
           </p-dropdown>
 
         </li> -->
-        <li class="dropdown" appDropdown>
-          <a href="#"><a href="#"><span><span class="flag-icon flag-icon-gr" style="width:24px;position:center;top:5px;left:5px"></span></span></a> <span class="caret"></span></a>
+        <li class="dropdown navli" appDropdown>
+          <a href="#"><a href="#"><span><span class="flag-icon flag-icon-rs" style="width:24px;position:center;"></span></span></a> <span class="caret" style="position:center;"></span></a>
           <ul class="dropdown-menu active">
             <li id="serbian">
                 <a href="#"><span><span class="flag-icon flag-icon-gr" style="width:24px;position:center;top:5px;left:5px"></span></span></a>
