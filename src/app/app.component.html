@@ -1,20 +1,45 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<header>
+  <div class="container">
+    <img class="logo" src="assets/images/logo.png" alt="Logo" height="50px" width="100px">
 
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Production</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <p-dropdown class="hidden-xs" [filter]="true" [options]="languages" [(ngModel)]="selectedLanguage" (onChange)="onChange()">
+    <span class="flag-icon flag-icon-gr" style="width:24px;position:absolute;top:1px;left:5px"></span>
+  </p-dropdown>
+  <span class="flag-icon flag-icon-gr" style="width:24px;position:absolute;top:1px;left:5px"></span>
+</header>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" [ngClass]="{active: currentSlide === 0}"></li>
+    <li data-target="#myCarousel" [ngClass]="{active: currentSlide === 1}"></li>
+    <li data-target="#myCarousel" [ngClass]="{active: currentSlide === 2}"></li>
+  </ol>
+  <div class="carousel-inner slides" id="slides" role="listbox">
+    <div class="item" [ngClass]="{active: currentSlide === 0}" id="first">
+      <img class="first-slide" src="assets/images/1.jpg" alt="First slide">
+    </div>
+    <div [ngClass]="{active: currentSlide === 1}" class="item" id="second">
+      <img class="second-slide" src="assets/images/1.jpg" alt="Second slide">
+    </div>
+    <div [ngClass]="{active: currentSlide === 2}" class="item" id="third">
+      <img class="third-slide" src="assets/images/1.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" (click)="onPrev()">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" (click)="onNext()">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>

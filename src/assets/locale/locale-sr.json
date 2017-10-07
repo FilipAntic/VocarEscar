@@ -1,0 +1,12 @@
+{
+    "menu": {
+        "menuHome" : "Home",
+        "menuAboutUs": "About Us",
+        "menuProducts" : "Products",
+        "menuProduction": "Production",
+        "menuContact": "Contact",
+        "menuLanguageSerbian": "Srpski",
+        "menuLanguageEnglish": "Engleski",
+        "menuLanguageFrench": "Francuski"
+    }
+}
