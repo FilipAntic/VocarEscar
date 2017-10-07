@@ -1,22 +1,8 @@
 <header>
-  <div class="container">
-    <img class="logo" src="assets/images/logo.png" alt="Logo" height="50px" width="100px">
-
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Production</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-  <p-dropdown class="hidden-xs" [filter]="true" [options]="languages" [(ngModel)]="selectedLanguage" (onChange)="onChange()">
-    <span class="flag-icon flag-icon-gr" style="width:24px;position:absolute;top:1px;left:5px"></span>
-  </p-dropdown>
-  <span class="flag-icon flag-icon-gr" style="width:24px;position:absolute;top:1px;left:5px"></span>
+ <app-header></app-header>
 </header>
+
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" [ngClass]="{active: currentSlide === 0}"></li>

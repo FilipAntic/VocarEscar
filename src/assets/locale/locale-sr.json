@@ -1,10 +1,10 @@
 {
     "menu": {
-        "menuHome" : "Home",
-        "menuAboutUs": "About Us",
-        "menuProducts" : "Products",
-        "menuProduction": "Production",
-        "menuContact": "Contact",
+        "menuHome" : "Pocetna",
+        "menuAboutUs": "O nama",
+        "menuProducts" : "Proizvodi",
+        "menuProduction": "Proizvodnja",
+        "menuContact": "Kontakt",
         "menuLanguageSerbian": "Srpski",
         "menuLanguageEnglish": "Engleski",
         "menuLanguageFrench": "Francuski"

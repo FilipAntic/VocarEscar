@@ -13,6 +13,8 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { DropdownModule } from 'primeng/primeng';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 
 @Injectable()
@@ -56,7 +58,9 @@ export function initLocalization(localizationConfig: LocalizationConfig): Functi
     ProductsComponent,
     ProductionComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserAnimationsModule,

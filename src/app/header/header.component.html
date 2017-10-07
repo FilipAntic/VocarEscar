@@ -1,0 +1,35 @@
+<div class="container">
+    <img class="logo" src="assets/images/logo.png" alt="Logo" height="50px" width="100px">
+
+    <nav>
+      <ul>
+        <li><a href="#">{{ 'menu.menuHome' | translate:lang }}</a></li>
+        <li><a href="#">{{ 'menu.menuAboutUs' | translate:lang }}</a></li>
+        <li><a href="#">{{ 'menu.menuProducts' | translate:lang }}</a></li>
+        <li><a href="#">{{ 'menu.menuProduction' | translate:lang }}</a></li>
+        <li><a href="#">{{ 'menu.menuContact' | translate:lang }}</a></li>
+        <!-- <li>
+          <p-dropdown class="hidden-xs" [filter]="true" [options]="languages" [(ngModel)]="selectedLanguage" (onChange)="onChange()">
+            <ng-template let-language pTemplate="item">
+              <div class="ui-helper-clearfix" style="position: relative;height: 25px;">
+                <span class="flag-icon" style="width:24px;position:center;top:5px;left:5px"></span>
+                <div style="font-size:14px;float:right;margin-top:4px">{{language.label}}</div>
+              </div>
+            </ng-template>
+          </p-dropdown>
+
+        </li> -->
+        <li class="dropdown" appDropdown>
+          <a href="#"><a href="#"><span><span class="flag-icon flag-icon-gr" style="width:24px;position:center;top:5px;left:5px"></span></span></a> <span class="caret"></span></a>
+          <ul class="dropdown-menu active">
+            <li id="serbian">
+                <a href="#"><span><span class="flag-icon flag-icon-gr" style="width:24px;position:center;top:5px;left:5px"></span></span></a>
+            </li>
+            <li id="english">
+                <a href="#"><span><span class="flag-icon flag-icon-gr" style="width:24px;position:center;top:5px;left:5px"></span></span></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>

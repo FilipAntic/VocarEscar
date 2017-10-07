@@ -77,3 +77,8 @@ nav a:hover::after{
     opacity: 0.9;
 }
 
+span {
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
