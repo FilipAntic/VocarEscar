@@ -15,6 +15,7 @@ import { DropdownModule } from 'primeng/primeng';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { ProductComponent } from './products/product/product.component';
 
 
 @Injectable()
@@ -60,7 +61,8 @@ export function initLocalization(localizationConfig: LocalizationConfig): Functi
     ContactComponent,
     HomeComponent,
     HeaderComponent,
-    DropdownDirective
+    DropdownDirective,
+    ProductComponent
   ],
   imports: [
     BrowserAnimationsModule,

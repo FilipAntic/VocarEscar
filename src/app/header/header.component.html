@@ -1,5 +1,6 @@
-<div class="container">
-    <img class="logo" src="assets/images/logo.png" alt="Logo" height="50px" width="100px">
+<div class="">
+    <img class="logo" src="assets/images/Logo.png" alt="Logo" height="50px" width="100px">
+    <a href="#"><img class="logo" src="assets/images/Logotip.jpg" alt="Logotip" height="50px" width="100px"></a>
 
     <nav>
       <ul>
@@ -19,14 +20,14 @@
           </p-dropdown>
 
         </li> -->
-        <li class="dropdown navli" appDropdown>
-          <a href="#"><a href="#"><span><span class="flag-icon flag-icon-rs" style="width:24px;position:center;"></span></span></a> <span class="caret" style="position:center;"></span></a>
+        <li class="dropdown navli" appDropdown >
+          <a href="#"><a href="#"><span class="flag-icon" [ngClass] = "selectedLanguage === 1? 'flag-icon-gb':'flag-icon-rs'" style="width:24px;position:center;"></span></a> <span class="caret" style="position:center;"></span></a>
           <ul class="dropdown-menu active">
-            <li id="serbian">
-                <a href="#"><span><span class="flag-icon flag-icon-gr" style="width:24px;position:center;top:5px;left:5px"></span></span></a>
+            <li id="serbian" (click)="onChange(2)">
+                <a href="#"><span class="flag-icon flag-icon-rs" style="width:24px;position:center;"></span>{{ 'menu.menuLanguageSerbian' | translate:lang }}</a>
             </li>
-            <li id="english">
-                <a href="#"><span><span class="flag-icon flag-icon-gr" style="width:24px;position:center;top:5px;left:5px"></span></span></a>
+            <li id="english" (click)="onChange(1)">
+                <a href="#"><span class="flag-icon flag-icon-gb" style="width:24px;position:center;"></span>{{ 'menu.menuLanguageEnglish' | translate:lang }}</a>
             </li>
           </ul>
         </li>

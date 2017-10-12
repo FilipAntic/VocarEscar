@@ -1,10 +1,11 @@
 
 .logo {
-    float: left;
+    left: 0;
 }
 
 nav {
     float: right;
+    margin-right: 70px;
 }
 
 nav ul {
@@ -45,27 +46,6 @@ nav a::after {
 
 nav a:hover::after{
     width: 100%;
-}
-
-
-.item img {
-    width: 100%;
-    vertical-align: top;
-}
-
-.item:after {
-    content: '\A';  
-    position: absolute;
-    width: 100%; height:100%;
-    bottom:0;
-    background: linear-gradient(to top,rgba(0,0,0,0.6),rgba(255, 255, 255, 0.0));
-    opacity: 0.9;
-}
-
-span {
-    background-size: contain;
-    background-position: 50%;
-    background-repeat: no-repeat;
 }
 
 .dropdown-menu li {

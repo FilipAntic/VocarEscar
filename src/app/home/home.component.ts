@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   currentSlide: number = 0;
-
   constructor() { }
 
   ngOnInit() {

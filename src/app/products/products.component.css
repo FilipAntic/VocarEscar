@@ -1,0 +1,31 @@
+.center {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    
+
+}
+
+.viewPort100{
+    width:100vw;
+    height:100vh;   
+}
+/* 
+.proba {
+    background-color: rgba(0, 0, 0, 0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .9) 100%);
+    background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .9) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .9)));
+    background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+.proba :hover {
+    
+    background-repeat: repeat-x;
+    filter: alpha(opacity=90);
+    outline: 0;
+    opacity: .9;
+} */

@@ -1,0 +1,11 @@
+.productDiv {
+    max-width: 300px;
+    max-height: 400px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.productImg {
+    border-radius: 50%;
+}

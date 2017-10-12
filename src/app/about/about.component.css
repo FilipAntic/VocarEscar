@@ -1,0 +1,37 @@
+.viewPort100{
+    width:100vw;
+    height:100vh;   
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.imageContainer {
+    position: relative;
+    width:100vw;
+    height:100vh;  
+}
+.imageContainer .after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+}
+.imageContainer .after {
+    display: block;
+    background: rgba(40, 45, 16, .6);
+}
+
+.containerForText {
+    max-width: 300px;
+    position:absolute;
+    top: 30px;
+    left: 100px;
+    z-index: 1;
+    color: white;
+}
