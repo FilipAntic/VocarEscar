@@ -1,3 +1,54 @@
-<p>
-  contact works!
-</p>
+<div class="viewPort100">
+  <div class="leftDiv">
+    <h1>Kontakt</h1>
+    <div class="mapContainer">
+      <agm-map [latitude]="lat" [longitude]="lng" [zoom]=14 [mapTypeId]="'satellite'">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
+    </div>
+  </div>
+
+  <div class="rightDiv">
+    <div class="allSections">
+      <div class="leftAlign">
+        <p>{{ 'contact.mail' | translate:lang }}</p>
+        <p>{{ 'contact.mobilePhone' | translate:lang }}</p>
+        <p>{{ 'contact.address' | translate:lang }}</p>
+        <p>{{ 'contact.fax' | translate:lang }}</p>
+      </div>
+      <div class="rightAlign">
+        <p>{{ 'contact.mailValue' | translate:lang }}</p>
+        <p>{{ 'contact.mobilePhoneValue' | translate:lang }}</p>
+        <p>{{ 'contact.addressValue' | translate:lang }}</p>
+        <p>{{ 'contact.faxValue' | translate:lang }}</p>
+      </div>
+    </div>
+    <form (ngSubmit)="save()" [formGroup]="contactUsForm">
+      <div class="form">
+        <div class="box rowColumn11">
+          <label for="mail">Email</label>
+          <input #mail type="text" [formControlName]="'email'">
+        </div>
+        <div class="box rowColumn21">
+          <label for="name">Name</label>
+          <input #name type="text" [formControlName]="'name'">
+        </div>
+        <div class="box rowColumn31">
+          <label for="phoneNumber">Phone number</label>
+          <input #phoneNumber type="text" [formControlName]="'phoneNumber'">
+        </div>
+        <div class="box rowColumn12">
+          <label for="message">Message</label>
+          <textarea class="textAreaMessage" #message></textarea>
+        </div>
+        <div class="box rowColumn32">
+          <button class="myBtn">Posalji</button>
+        </div>
+      </div>
+    </form>
+    <div class="logos">
+      <img class="logo" src="assets/images/Logo.png" alt="Logo" height="50px" width="100px">
+      <img class="logo" src="assets/images/Logotip.jpg" alt="Logotip" height="50px" width="100px">
+    </div>
+  </div>
+</div>

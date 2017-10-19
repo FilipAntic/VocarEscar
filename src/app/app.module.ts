@@ -12,11 +12,11 @@ import { ProductionComponent } from './production/production.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { DropdownModule } from 'primeng/primeng';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { ProductComponent } from './products/product/product.component';
-
+import { AgmCoreModule } from '@agm/core';
 
 @Injectable()
 export class LocalizationConfig {
@@ -70,7 +70,11 @@ export function initLocalization(localizationConfig: LocalizationConfig): Functi
     HttpModule,
     TranslationModule.forRoot(),
     DropdownModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDKH6h3THlAjx_9e883-qKXbfN79kMOqao'
+    })
 
 
   ],

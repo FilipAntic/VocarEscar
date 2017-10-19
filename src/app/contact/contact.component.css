@@ -1,0 +1,131 @@
+.viewPort100 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.leftDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+    background-color: #5b7173;
+}
+
+.rightDiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+    background-color: #282d2e;
+}
+
+agm-map {
+    height: 300px;
+    vertical-align: middle;
+}
+
+.mapContainer {
+    margin: 0 auto;
+    position: relative;
+}
+
+.mapContainer::before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 1%;
+    vertical-align: middle;
+}
+
+.textAlignRight {
+    text-align: right;
+    right: 10px;
+}
+
+.allSections {
+    margin: 3% auto;
+    width: 8em;
+    height: 30%;
+    width: 50%;
+    clear: both;
+}
+
+.leftAlign {
+    float: left;
+}
+
+.rightAlign {
+    float: right;
+    text-align: right;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    margin: 0 auto;
+    width: 50%;
+    justify-items: start;
+}
+
+.box {
+    padding: 15px 0;
+}
+
+.rowColumn11 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.rowColumn21 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.rowColumn31 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.rowColumn12 {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    justify-self: stretch;
+}
+
+.rowColumn32 {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: end;
+    justify-self: end;
+}
+
+label {
+    display: block;
+}
+
+.myBtn {
+    padding: 6%;
+    border: 2px solid white;
+    background-color: #282d2e;
+    font-weight: bold;
+}
+
+.rightDiv label, p, button, h1 {
+    color: white;
+}
+
+textarea {
+    height: 80%;
+}
+
+.logos {
+    width: 50%;
+    margin: 0 auto;
+    float: right;
+}

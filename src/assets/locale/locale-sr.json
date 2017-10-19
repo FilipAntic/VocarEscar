@@ -1,12 +1,22 @@
 {
     "menu": {
-        "menuHome" : "Pocetna",
+        "menuHome": "Pocetna",
         "menuAboutUs": "O nama",
-        "menuProducts" : "Proizvodi",
+        "menuProducts": "Proizvodi",
         "menuProduction": "Proizvodnja",
         "menuContact": "Kontakt",
         "menuLanguageSerbian": "Srpski",
         "menuLanguageEnglish": "Engleski",
         "menuLanguageFrench": "Francuski"
+    },
+    "contact": {
+        "mailValue": "zoran.antic64@gmail.com",
+        "mobilePhoneValue": "+38163313071",
+        "addressValue": "Salinacka bb",
+        "faxValue": "Fax",
+        "mail": "Mejl:",
+        "mobilePhone": "Broj telefona:",
+        "address": "Adresa:",
+        "fax": "Faks:"
     }
 }

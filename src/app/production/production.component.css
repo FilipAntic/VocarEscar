@@ -1,7 +1,7 @@
-.viewPort100{
-    width:100vw;
-    height:100vh;
-    position: relative;   
+.viewPort100 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
 .pHolder {
@@ -22,24 +22,34 @@
 }
 
 .leftDiv {
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    background: url("../../assets/images/fabrika.jpg") no-repeat center;
+    height: 180px;
+    width: 200px;
+    /* margin: 0 auto; */
     width: 50%;
-    height: 100%;
-    display: block;
+    height: auto;
+    float: left;
 }
 
 .rightDiv {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    display: block;
+    /* position: absolute; */
+    /* top: 0;
+    right: 0; */
+    background: url("../../assets/images/slika2.jpg") no-repeat center;
+    /* margin: 0 auto; */
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+
+/* .leftDiv img, .rightDiv img {
+    width: 100%;
 }
 
 img {
-    max-width:100%;
-    max-height:100%;
-}
+    display: block;
+} */

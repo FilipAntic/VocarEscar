@@ -1,12 +1,22 @@
 {
     "menu": {
-        "menuHome" : "Home",
+        "menuHome": "Home",
         "menuAboutUs": "About Us",
-        "menuProducts" : "Products",
+        "menuProducts": "Products",
         "menuProduction": "Production",
         "menuContact": "Contact",
         "menuLanguageSerbian": "Serbian",
         "menuLanguageEnglish": "English",
         "menuLanguageFrench": "French"
+    },
+    "contact": {
+        "mailValue": "zoran.antic64@gmail.com",
+        "mobilePhoneValue": "+38163313071",
+        "addressValue": "Salinacka bb",
+        "faxValue": "Fax",
+        "mail": "Mail",
+        "mobilePhone": "Phone number",
+        "address": "Address",
+        "fax": "Fax"
     }
 }

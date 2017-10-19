@@ -1,15 +1,30 @@
 <div class="">
-    <img class="logo" src="assets/images/Logo.png" alt="Logo" height="50px" width="100px">
-    <a href="#"><img class="logo" src="assets/images/Logotip.jpg" alt="Logotip" height="50px" width="100px"></a>
+  <img class="logo" src="assets/images/Logo.png" alt="Logo" height="50px" width="100px">
+  <a href="#">
+    <img class="logo" src="assets/images/Logotip.jpg" alt="Logotip" height="50px" width="100px">
+  </a>
 
-    <nav>
-      <ul>
-        <li class="navli"><a href="#">{{ 'menu.menuHome' | translate:lang }}</a></li>
-        <li class="navli"><a href="#">{{ 'menu.menuAboutUs' | translate:lang }}</a></li>
-        <li class="navli"><a href="#">{{ 'menu.menuProducts' | translate:lang }}</a></li>
-        <li class="navli"><a href="#">{{ 'menu.menuProduction' | translate:lang }}</a></li>
-        <li class="navli"><a href="#">{{ 'menu.menuContact' | translate:lang }}</a></li>
-        <!-- <li>
+  <nav>
+    <a href="" class="menu-icon btn btn-info btn-sm">
+      <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </a>
+    <ul>
+      <li class="navli current">
+        <a href="#home">{{ 'menu.menuHome' | translate:lang }}</a>
+      </li>
+      <li class="navli">
+        <a href="#about">{{ 'menu.menuAboutUs' | translate:lang }}</a>
+      </li>
+      <li class="navli">
+        <a href="#products">{{ 'menu.menuProducts' | translate:lang }}</a>
+      </li>
+      <li class="navli">
+        <a href="#production">{{ 'menu.menuProduction' | translate:lang }}</a>
+      </li>
+      <li class="navli">
+        <a href="#contact">{{ 'menu.menuContact' | translate:lang }}</a>
+      </li>
+      <!-- <li>
           <p-dropdown class="hidden-xs" [filter]="true" [options]="languages" [(ngModel)]="selectedLanguage" (onChange)="onChange()">
             <ng-template let-language pTemplate="item">
               <div class="ui-helper-clearfix" style="position: relative;height: 25px;">
@@ -20,17 +35,25 @@
           </p-dropdown>
 
         </li> -->
-        <li class="dropdown navli" appDropdown >
-          <a href="#"><a href="#"><span class="flag-icon" [ngClass] = "selectedLanguage === 1? 'flag-icon-gb':'flag-icon-rs'" style="width:24px;position:center;"></span></a> <span class="caret" style="position:center;"></span></a>
-          <ul class="dropdown-menu active">
-            <li id="serbian" (click)="onChange(2)">
-                <a href="#"><span class="flag-icon flag-icon-rs" style="width:24px;position:center;"></span>{{ 'menu.menuLanguageSerbian' | translate:lang }}</a>
-            </li>
-            <li id="english" (click)="onChange(1)">
-                <a href="#"><span class="flag-icon flag-icon-gb" style="width:24px;position:center;"></span>{{ 'menu.menuLanguageEnglish' | translate:lang }}</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
+      <li class="dropdown navli" appDropdown>
+        <a href="#">
+          <a href="#">
+            <span class="flag-icon" [ngClass]="selectedLanguage === 1? 'flag-icon-gb':'flag-icon-rs'" style="width:24px;position:center;"></span>
+          </a>
+          <span class="caret" style="position:center;"></span>
+        </a>
+        <ul class="dropdown-menu active">
+          <li id="serbian" (click)="onChange(2)">
+            <a href="#">
+              <span class="flag-icon flag-icon-rs" style="width:24px;position:center;"></span>{{ 'menu.menuLanguageSerbian' | translate:lang }}</a>
+          </li>
+          <li id="english" (click)="onChange(1)">
+            <a>
+              <span class="flag-icon flag-icon-gb" style="width:24px;position:center;"></span>{{ 'menu.menuLanguageEnglish' | translate:lang }}
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>

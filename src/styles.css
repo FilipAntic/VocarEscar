@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'SamsungOne 800';
+    src: url('assets/fonts/SamsungOne-800.eot');
+    src: url('assets/fonts/SamsungOne-800.eot?#iefix') format('embedded-opentype'), url('assets/fonts/SamsungOne-800.woff2') format('woff2'), url('assets/fonts/SamsungOne-800.woff') format('woff'), url('assets/fonts/SamsungOne-800.ttf') format('truetype'), url('assets/fonts/SamsungOne-800.svg#SamsungOne-800') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 600';
+    src: url('assets/fonts/SamsungOne-600.eot');
+    src: url('assets/fonts/SamsungOne-600.eot?#iefix') format('embedded-opentype'), url('assets/fonts/SamsungOne-600.woff2') format('woff2'), url('assets/fonts/SamsungOne-600.woff') format('woff'), url('assets/fonts/SamsungOne-600.ttf') format('truetype'), url('assets/fonts/SamsungOne-600.svg#SamsungOne-600') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SamsungOne 400';
+    src: url('assets/fonts/SamsungOne-400.eot');
+    src: url('assets/fonts/SamsungOne-400.eot?#iefix') format('embedded-opentype'), url('assets/fonts/SamsungOne-400.woff2') format('woff2'), url('assets/fonts/SamsungOne-400.woff') format('woff'), url('assets/fonts/SamsungOne-400.ttf') format('truetype'), url('assets/fonts/SamsungOne-400.svg#SamsungOne-400') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'SamsungOne 400', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
