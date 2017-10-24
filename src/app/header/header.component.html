@@ -1,6 +1,6 @@
-<div class="">
+<!-- <div class="">
   <img class="logo" src="assets/images/Logo.png" alt="Logo" height="50px" width="100px">
-  <a href="#">
+  <a href="javascript: void(0)" id="first" appScroll>
     <img class="logo" src="assets/images/Logotip.jpg" alt="Logotip" height="50px" width="100px">
   </a>
 
@@ -10,32 +10,20 @@
     </a>
     <ul>
       <li class="navli current">
-        <a href="#home">{{ 'menu.menuHome' | translate:lang }}</a>
+        <a href="javascript: void(0)" id="first" appScroll>{{ 'menu.menuHome' | translate:lang }}</a>
       </li>
       <li class="navli">
-        <a href="#about">{{ 'menu.menuAboutUs' | translate:lang }}</a>
+        <a href="javascript: void(0)" id="second" appScroll>{{ 'menu.menuAboutUs' | translate:lang }}</a>
       </li>
       <li class="navli">
-        <a href="#products">{{ 'menu.menuProducts' | translate:lang }}</a>
+        <a href="javascript: void(0)" id="third" appScroll>{{ 'menu.menuProducts' | translate:lang }}</a>
       </li>
       <li class="navli">
-        <a href="#production">{{ 'menu.menuProduction' | translate:lang }}</a>
+        <a href="javascript: void(0)" id="fourth" appScroll>{{ 'menu.menuProduction' | translate:lang }}</a>
       </li>
       <li class="navli">
-        <a href="#contact">{{ 'menu.menuContact' | translate:lang }}</a>
+        <a href="javascript: void(0)" id="fifth" appScroll>{{ 'menu.menuContact' | translate:lang }}</a>
       </li>
-      <!-- <li>
-          <p-dropdown class="hidden-xs" [filter]="true" [options]="languages" [(ngModel)]="selectedLanguage" (onChange)="onChange()">
-            <ng-template let-language pTemplate="item">
-              <div class="ui-helper-clearfix" style="position: relative;height: 25px;">
-                <span class="flag-icon" style="width:24px;position:center;top:5px;left:5px"></span>
-                <div style="font-size:14px;float:right;margin-top:4px">{{language.label}}</div>
-              </div>
-            </ng-template>
-          </p-dropdown>
-
-        </li> -->
-      <li class="dropdown navli" appDropdown>
         <a href="#">
           <a href="#">
             <span class="flag-icon" [ngClass]="selectedLanguage === 1? 'flag-icon-gb':'flag-icon-rs'" style="width:24px;position:center;"></span>
@@ -44,11 +32,11 @@
         </a>
         <ul class="dropdown-menu active">
           <li id="serbian" (click)="onChange(2)">
-            <a href="#">
+            <a href="javascript: void(0)">
               <span class="flag-icon flag-icon-rs" style="width:24px;position:center;"></span>{{ 'menu.menuLanguageSerbian' | translate:lang }}</a>
           </li>
           <li id="english" (click)="onChange(1)">
-            <a>
+            <a href="javascript: void(0)">
               <span class="flag-icon flag-icon-gb" style="width:24px;position:center;"></span>{{ 'menu.menuLanguageEnglish' | translate:lang }}
             </a>
           </li>
@@ -56,4 +44,65 @@
       </li>
     </ul>
   </nav>
-</div>
+</div> -->
+
+
+<nav class="navbar navbar-reverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img class="logo" src="assets/images/Logo.png" alt="Logo" height="50px" width="100px">
+      <a href="javascript: void(0)" id="first" appScroll>
+        <img class="logo" src="assets/images/Logotip.jpg" alt="Logotip" height="50px" width="100px">
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="">
+          <a href="javascript: void(0)" id="first" appScroll>{{ 'menu.menuHome' | translate:lang }}</a>
+        </li>
+        <li class="">
+          <a href="javascript: void(0)" id="second" appScroll>{{ 'menu.menuAboutUs' | translate:lang }}</a>
+        </li>
+        <li class="">
+          <a href="javascript: void(0)" id="third" appScroll>{{ 'menu.menuProducts' | translate:lang }}</a>
+        </li>
+        <li class="">
+          <a href="javascript: void(0)" id="fourth" appScroll>{{ 'menu.menuProduction' | translate:lang }}</a>
+        </li>
+        <li class="">
+          <a href="javascript: void(0)" id="fifth" appScroll>{{ 'menu.menuContact' | translate:lang }}</a>
+        </li>
+        <li class="dropdown" appDropdown>
+          <a href="javascript: void(0)" class="dropdown-toggle">
+            <span class="flag-icon" [ngClass]="selectedLanguage === 1? 'flag-icon-gb':'flag-icon-rs'" style="width:24px;position:center;"></span>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li id="serbian" (click)="onChange(2)">
+              <a href="javascript: void(0)">
+                <span class="flag-icon flag-icon-rs" style="width:24px;position:center;"></span>{{ 'menu.menuLanguageSerbian' | translate:lang }}</a>
+            </li>
+            <li id="english" (click)="onChange(1)">
+              <a href="javascript: void(0)">
+                <span class="flag-icon flag-icon-gb" style="width:24px;position:center;"></span>{{ 'menu.menuLanguageEnglish' | translate:lang }}
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- <a href="#">
+                    <a href="#">
+                      <span class="flag-icon" [ngClass]="selectedLanguage === 1? 'flag-icon-gb':'flag-icon-rs'" style="width:24px;position:center;"></span>
+                    </a>
+          <span class="caret" style="position:center;"></span>
+        </a>
+         -->
+      </ul>
+    </div>
+  </div>
+</nav>

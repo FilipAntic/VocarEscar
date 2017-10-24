@@ -125,7 +125,32 @@ textarea {
 }
 
 .logos {
-    width: 50%;
+    /* width: 50%;
     margin: 0 auto;
-    float: right;
+    float: right; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 3%;
+}
+
+@media screen and (max-width: 768px) {
+    .leftDiv {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        display: block;
+        background-color: #5b7173;
+    }
+    .rightDiv {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 50%;
+        display: block;
+        background-color: #282d2e;
+    }
 }

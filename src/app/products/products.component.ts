@@ -12,10 +12,6 @@ export class ProductsComponent implements OnInit {
 
   constructor() { }
   ngOnInit() {
-    let grid = {
-      columns: 2,
-
-    }
     this.products[0] = { imageSrc: "snail1.jpg", title: "Proba", description: "Lorem ipsuuuuuuuuuuuuum" };
     this.products[1] = { imageSrc: "snail2.jpg", title: "Proba2", description: "Lorem ipsuuuuuuuuuuuuumLorem ipsuuuuuuuuuuuuum" };
   }

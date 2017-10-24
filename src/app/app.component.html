@@ -1,21 +1,33 @@
 <header>
         <app-header></app-header>
 </header>
-<section>
-        <app-home id="home"></app-home>
-</section>
-<section>
-        <app-about id="about"></app-about>
-</section>
+<div class="container-fluid">
+        <div class="row">
+                <section>
+                        <app-home id="home"></app-home>
+                </section>
+        </div>
+        <div class="row">
+                <section>
+                        <app-about id="about"></app-about>
+                </section>
+        </div>
+        <div class="row">
+                <section>
+                        <app-products id="products"></app-products>
+                </section>
+        </div>
 
-<section>
-        <app-products id="products"></app-products>
-</section>
 
-<section>
-        <app-production id="production"></app-production>
-</section>
+        <div class="row">
+                <section>
+                        <app-production id="production"></app-production>
+                </section>
+        </div>
+        <div class="row">
+                <section>
+                        <app-contact id="contact"></app-contact>
+                </section>
+        </div>
 
-<section>
-        <app-contact id="contact"></app-contact>
-</section>
+</div>

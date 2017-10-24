@@ -1,3 +1,31 @@
+nav {
+    background: #5b7173;
+    position: fixed;
+    opacity: 0.8;
+    margin-top: 0;
+    z-index: 100;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+.navbar-nav > li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+* {
+    color: white;
+}
+
+
+/* 
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+ */
+
+
+/* 
 .logo {
     left: 0;
 }
@@ -33,7 +61,7 @@ nav a::after {
     content: '';
     display: block;
     height: 2px;
-    background-color: green;
+    background-color: red;
     position: absolute;
     bottom: 10;
     width: 0%;
@@ -46,9 +74,10 @@ nav a:hover::after {
 
 .dropdown-menu li {
     list-style: none;
+    background: #5b7173;
 }
 
-.menu-icon, a span {
+.menu-icon, .glyphicon {
     display: none;
 }
 
@@ -59,4 +88,4 @@ nav a:hover::after {
     .menu-icon, a span {
         display: inline-block;
     }
-}
+} */

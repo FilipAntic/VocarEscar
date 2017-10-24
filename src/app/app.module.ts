@@ -17,6 +17,7 @@ import { HeaderComponent } from './header/header.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { ProductComponent } from './products/product/product.component';
 import { AgmCoreModule } from '@agm/core';
+import { ScrollDirective } from './shared/scroll.directive';
 
 @Injectable()
 export class LocalizationConfig {
@@ -62,7 +63,8 @@ export function initLocalization(localizationConfig: LocalizationConfig): Functi
     HomeComponent,
     HeaderComponent,
     DropdownDirective,
-    ProductComponent
+    ProductComponent,
+    ScrollDirective
   ],
   imports: [
     BrowserAnimationsModule,

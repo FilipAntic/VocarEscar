@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   @Language() lang: string;
   languages: SelectItem[];
   selectedLanguage: any;
-  
+
   constructor(public locale: LocaleService, private translation: TranslationService) { }
 
   ngOnInit() {
@@ -33,7 +33,7 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  onChange(selLang:number) {
+  onChange(selLang: number) {
     this.selectedLanguage = selLang;
     if (this.selectedLanguage === 1) {
       this.selectLocale('en', 'US', 'USD');

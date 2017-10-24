@@ -22,34 +22,15 @@
 }
 
 .leftDiv {
-    /* position: absolute; */
-    /* top: 0;
-    left: 0; */
     background: url("../../assets/images/fabrika.jpg") no-repeat center;
-    height: 180px;
-    width: 200px;
-    /* margin: 0 auto; */
     width: 50%;
-    height: auto;
+    height: 100vh;
     float: left;
 }
 
 .rightDiv {
-    /* position: absolute; */
-    /* top: 0;
-    right: 0; */
     background: url("../../assets/images/slika2.jpg") no-repeat center;
-    /* margin: 0 auto; */
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: 100vh;
     float: left;
 }
-
-
-/* .leftDiv img, .rightDiv img {
-    width: 100%;
-}
-
-img {
-    display: block;
-} */
