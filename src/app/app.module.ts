@@ -18,6 +18,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { ProductComponent } from './products/product/product.component';
 import { AgmCoreModule } from '@agm/core';
 import { ScrollDirective } from './shared/scroll.directive';
+import { MenuCollapseDirective } from './shared/menu-collapse.directive';
 
 @Injectable()
 export class LocalizationConfig {
@@ -64,7 +65,8 @@ export function initLocalization(localizationConfig: LocalizationConfig): Functi
     HeaderComponent,
     DropdownDirective,
     ProductComponent,
-    ScrollDirective
+    ScrollDirective,
+    MenuCollapseDirective
   ],
   imports: [
     BrowserAnimationsModule,
