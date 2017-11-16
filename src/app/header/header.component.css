@@ -21,7 +21,7 @@ nav {
     .navbar-collapse.collapse {
         display: none !important;
     }
-    .navbar-collapse.collapse.in {
+    /* .navbar-collapse.collapse.in {
         display: block !important;
     }
     .navbar-header .collapse, .navbar-toggle {
@@ -29,7 +29,7 @@ nav {
     }
     .navbar-header {
         float: none;
-    }
+    } */
 }
 
 
