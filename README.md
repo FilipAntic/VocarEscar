@@ -1,3 +1,8 @@
+<p align="center">
+  <a name="top" href="#"><img src="Sajt.jpg"></a>
+</p>
+
+
 # VocarEscarSite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
