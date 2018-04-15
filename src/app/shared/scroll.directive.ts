@@ -5,7 +5,7 @@ import { Directive, HostListener, ElementRef } from '@angular/core';
 })
 export class ScrollDirective {
 
-  hashArrays: string[] = ["home", "about", "products", "production", "contact"];
+  menuArray: string[] = ["home", "about", "products", "production", "contact"];
   @HostListener('click') scrollTo() {
     // document.querySelector('this.el.nativeElement.hash').scrollIntoView({ behavior: 'smooth' });
     // setTimeout(document.getElementById("about").scrollIntoView({ behavior: 'smooth' }), 0);
@@ -13,19 +13,19 @@ export class ScrollDirective {
     let hash = "";
     switch (this.el.nativeElement.id) {
       case "first":
-        hash = this.hashArrays[0];
+        hash = this.menuArray[0];
         break;
       case "second":
-        hash = this.hashArrays[1];
+        hash = this.menuArray[1];
         break;
       case "third":
-        hash = this.hashArrays[2];
+        hash = this.menuArray[2];
         break;
       case "fourth":
-        hash = this.hashArrays[3];
+        hash = this.menuArray[3];
         break;
       case "fifth":
-        hash = this.hashArrays[4];
+        hash = this.menuArray[4];
         break;
 
     }

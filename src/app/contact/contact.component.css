@@ -116,7 +116,10 @@ label {
     font-weight: bold;
 }
 
-.rightDiv label, p, button, h1 {
+.rightDiv label,
+p,
+button,
+h1 {
     color: white;
 }
 

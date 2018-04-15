@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   @Language() lang: string;
   languages: SelectItem[];
   selectedLanguage: any;
-
+  isToggleClicked = false;
   constructor(public locale: LocaleService, private translation: TranslationService) { }
 
   ngOnInit() {
@@ -48,5 +48,7 @@ export class HeaderComponent implements OnInit {
     this.locale.setCurrentCurrency(currency);
     location.reload();
   }
-
+  openMenu() { // click handler
+    this.isToggleClicked = !this.isToggleClicked;
+  }
 }

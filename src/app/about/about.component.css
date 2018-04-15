@@ -1,6 +1,6 @@
-.viewPort100{
-    width:100vw;
-    height:100vh;   
+.viewPort100 {
+    width: 100vw;
+    height: 100vh;
 }
 
 img {
@@ -10,9 +10,10 @@ img {
 
 .imageContainer {
     position: relative;
-    width:100vw;
-    height:100vh;  
+    width: 100vw;
+    height: 100vh;
 }
+
 .imageContainer .after {
     position: absolute;
     top: 0;
@@ -22,6 +23,7 @@ img {
     display: none;
     color: #FFF;
 }
+
 .imageContainer .after {
     display: block;
     background: rgba(40, 45, 16, .6);
@@ -29,9 +31,26 @@ img {
 
 .containerForText {
     max-width: 300px;
-    position:absolute;
-    top: 30px;
-    left: 100px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
     z-index: 1;
     color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .imageContainer .after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: auto;
+        width: 100%;
+        height: 50%;
+        display: none;
+        color: #FFF;
+    }
+    .imageContainer .after {
+        display: block;
+        background: rgba(40, 45, 16, .6);
+    }
 }

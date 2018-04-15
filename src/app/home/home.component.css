@@ -1,42 +1,52 @@
-    .viewPort100 {
-        width: 100vw;
-        height: 100vh;
-    }
-    
-    .item img {
-        width: 100%;
-        vertical-align: top;
-    }
-    
-    .item:after {
-        content: '\A';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        bottom: 0;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.0));
-        opacity: 0.9;
-    }
-    
+.viewPort100 {
+    width: 100vw;
+    height: 100vh;
+}
+
+.item img {
+    width: 100%;
+    vertical-align: top;
+    min-height: 100vh;
+}
+
+.item:after {
+    content: '\A';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.0));
+    opacity: 0.9;
+}
+
+.containerForText {
+    max-width: 300px;
+    position: absolute;
+    top: 70px;
+    left: 200px;
+    z-index: 1;
+    color: white;
+}
+
+.heading {
+    font-size: 65pt;
+}
+
+.horizontalLine {
+    width: 50px;
+    position: absolute;
+    left: 0;
+}
+
+.shortDescriptionP {
+    padding-top: 55px;
+}
+
+@media screen and (max-width: 800px) {
     .containerForText {
-        max-width: 300px;
-        position: absolute;
-        top: 70px;
-        left: 200px;
-        z-index: 1;
-        color: white;
+        display: none;
     }
-    
-    .heading {
-        font-size: 65pt;
+    #first {
+        content: url("/assets/images/slide-slika1-manja.jpg");
     }
-    
-    .horizontalLine {
-        width: 50px;
-        position: absolute;
-        left: 0;
-    }
-    
-    .shortDescriptionP {
-        padding-top: 55px;
-    }
+}

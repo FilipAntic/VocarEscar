@@ -1,5 +1,6 @@
 nav {
     background: #5b7173;
+    /* background: none !important; */
     position: fixed;
     opacity: 0.8;
     margin-top: 0;
@@ -8,9 +9,22 @@ nav {
     border-bottom: 2px solid white;
 }
 
-.navbar-nav > li {
-    padding-left: 20px;
-    padding-right: 20px;
+.text {
+    animation: example2 10s ease-out;
+}
+
+@keyframes text {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+}
+
+.navbar-nav>li {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 * {
@@ -19,7 +33,7 @@ nav {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar-collapse.collapse {
-        display: none !important;
+        /* display: none !important; */
     }
     /* .navbar-collapse.collapse.in {
         display: block !important;
@@ -30,6 +44,18 @@ nav {
     .navbar-header {
         float: none;
     } */
+}
+
+.logo {
+    max-height: 50px;
+    max-width: 100px;
+    content: url("/assets/images/Logo.png");
+}
+
+.logotip {
+    max-height: 50px;
+    max-width: 100px;
+    content: url("/assets/images/Logotip.jpg");
 }
 
 
@@ -104,3 +130,16 @@ nav a:hover::after {
         display: inline-block;
     }
 } */
+
+@media screen and (max-width: 800px) {
+    .logo {
+        max-height: 50px;
+        max-width: 85px;
+        content: url("/assets/images/Logo.png");
+    }
+    .logotip {
+        max-height: 50px;
+        max-width: 85px;
+        content: url("/assets/images/Logotip.jpg");
+    }
+}

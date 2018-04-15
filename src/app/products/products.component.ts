@@ -14,6 +14,7 @@ export class ProductsComponent implements OnInit {
   ngOnInit() {
     this.products[0] = { imageSrc: "snail1.jpg", title: "Proba", description: "Lorem ipsuuuuuuuuuuuuum" };
     this.products[1] = { imageSrc: "snail2.jpg", title: "Proba2", description: "Lorem ipsuuuuuuuuuuuuumLorem ipsuuuuuuuuuuuuum" };
+    // this.products[2] = { imageSrc: "snail2.jpg", title: "Proba2", description: "Lorem ipsuuuuuuuuuuuuumLorem ipsuuuuuuuuuuuuum" };
   }
 
 }
